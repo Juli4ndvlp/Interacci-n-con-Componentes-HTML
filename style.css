@@ -16,9 +16,9 @@ body {
 
 .container {
     width: 100%;
-    max-width: 450px;
-    background: white;
-    padding: 30px;
+    max-width: 500px;
+    background: rgb(255, 255, 255);
+    padding: 50px;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
@@ -76,3 +76,8 @@ body {
 }
 
 .error { color: #e74c3c; display: none; margin-bottom: 10px; font-size: 13px; }
+
+.btn-clear {
+    border-radius: 8px;
+    background-color: #e74c3c;
+}
