@@ -1,0 +1,78 @@
+:root {
+    --primary-purple: #1cb1c5;
+    --primary-purple-hover: #6a2ed9;
+    --bg-light: #f8faff;
+    --border-color: #e0e6ed;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg-light);
+    display: flex;
+    justify-content: center; 
+    padding-top: 50px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.stats-counter {
+    background-color: #f1ecff;
+    color: var(--primary-purple);
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.input-group { display: flex; flex-direction: column; gap: 12px; }
+
+.form-control {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: var(--primary-purple);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.task-card {
+    list-style: none;
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-card.is-done {
+    background-color: #f4f7f6;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-card.is-urgent {
+    border-left: 5px solid #e74c3c;
+    background-color: #fff5f5;
+}
+
+.error { color: #e74c3c; display: none; margin-bottom: 10px; font-size: 13px; }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Task Manager</h1>
+        
+        <div class="stats-counter">
+            <span id="completed-count">0</span> de <span id="total-count">0</span> tareas completadas
+        </div>
+
+        <section class="form-container">
+            <div id="error-message" class="error">Por favor, escribe una tarea.</div>
+            
+            <div class="input-group">
+                <input type="text" id="task-input" placeholder="Escribe una tarea..." class="form-control">
+                
+                <select id="category-select" class="form-control">
+                    <option value="" disabled selected>— Categoría —</option>
+                    <option value="Trabajo">💼 Trabajo</option>
+                    <option value="Estudio">📚 Estudio</option>
+                    <option value="Personal">🏠 Personal</option>
+                    <option value="Urgente">🔥 Urgente</option>
+                    <option value="Otra">✨ Otra...</option>
+                </select>
+
+                <input type="text" id="custom-category" placeholder="¿Cuál categoría?" class="form-control" style="display: none;">
+                
+                <button id="add-btn" class="btn-primary" onclick="addTask()">+ Agregar tarea</button>
+            </div>
+        </section>
+
+        <section class="list-section">
+            <ul id="task-list">
+                </ul>
+            <button id="clear-completed" class="btn-clear" style="display: none;">Limpiar completadas</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
