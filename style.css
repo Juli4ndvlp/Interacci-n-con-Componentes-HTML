@@ -5,7 +5,10 @@
     --border-color: #e0e6ed;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
 
 body {
     background-color: var(--bg-light);
@@ -62,22 +65,4 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.task-card.is-done {
-    background-color: #f4f7f6;
-    text-decoration: line-through;
-    opacity: 0.6;
-}
-
-.task-card.is-urgent {
-    border-left: 5px solid #e74c3c;
-    background-color: #fff5f5;
-}
-
-.error { color: #e74c3c; display: none; margin-bottom: 10px; font-size: 13px; }
-
-.btn-clear {
-    border-radius: 8px;
-    background-color: #e74c3c;
 }
